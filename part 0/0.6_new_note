@@ -1,0 +1,12 @@
+browser->server: HTTP POST request to the address new_note_spa 
+
+note over browser:
+contains the new note as JSON-data: content and date
+end note
+
+note over server:
+The Content-Type header of the request tells the server, 
+that the included data is represented in the JSON format.
+end note
+
+server->browser:  statuscode 201: note has been created
